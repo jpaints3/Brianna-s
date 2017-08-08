@@ -5,21 +5,33 @@
 
 #plans {
     position: absolute;
-    top: 30%;
-    left: 45%;
+    top: 42%;
+    left: 48%;
     height: 75px;
     width: 80px;
+    border-radius: 100%;
     background-color: #fff3e0;
 }
 
 #signInButton{
     position: absolute;
     top: 2%;
-    left: 88%;
+    left: 92%;
     border-radius: 100%;
     background-color: #fff3e0;
     height: 75px;
 }
+
+#signInButton2{
+    position: absolute;
+    top: 2%;
+    left: 87%;
+    border-radius: 100%;
+    background-color: #fff3e0;
+    height: 75px;
+    width: 87.4px;
+}
+
 
 li{
   margin: 0px 10px 0px 10px;
@@ -80,7 +92,13 @@ nav{
 }
 
 #motto{
-    font-size: 25px;
+    font-size: 40px;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 15%;
+    left:40%;
+    text-align: center;
 }
 
 #card-title{
