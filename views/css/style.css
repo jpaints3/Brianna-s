@@ -1,6 +1,6 @@
 #logo{
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
 }
 
 #plans {
@@ -14,7 +14,8 @@
     top: 2%;
     left: 88%;
     border-radius: 100%;
-    
+    background-color: #fff3e0;
+    height: 75px;
 }
 
 li{
@@ -33,3 +34,14 @@ li{
 #featured{
     text-align: center;
 }
+
+nav{
+    background-color: #8bc34a;
+    height: 100px;
+}
+
+#page-footer{
+    background-color: #8bc34a;
+    height: 100px;
+}
+
