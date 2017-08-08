@@ -1,0 +1,35 @@
+#logo{
+    height: 60px;
+    width: 60px;
+}
+
+#plans {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+#signInButton{
+    position: absolute;
+    top: 2%;
+    left: 88%;
+    border-radius: 100%;
+    
+}
+
+li{
+  margin: 0px 10px 0px 10px;
+  float: left;
+  color: black;
+}
+
+#terms{
+    position:absolute;
+    left: 5%;
+    top: 2%;
+
+}
+
+#featured{
+    text-align: center;
+}

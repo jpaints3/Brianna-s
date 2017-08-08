@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carnarcie Eats</title>
+          <!-- Compiled and minified CSS -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link rel="stylesheet" href="css/style.css"> 
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyDoiinWG-FfUldXtZ8BfDejwE0ZHnAEq1c",
+                authDomain: "b-web-54c62.firebaseapp.com",
+                databaseURL: "https://b-web-54c62.firebaseio.com",
+                projectId: "b-web-54c62",
+                storageBucket: "b-web-54c62.appspot.com",
+                messagingSenderId: "107561683815"
+              };
+              firebase.initializeApp(config);
+            </script>
+    </head>
+    
+    <body onload="window.resizeTo(700,700)">
+      <div id='container'>
+        <header>
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content center">
+              <li><a href="#!">Vegetarian Recipes</a></li>
+              <li><a href="#!">Special Allergy Recipes</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Large family Recipes</a></li>
+            </ul>
+            <!--Navbar-->
+            <nav>
+              <nav>
+              <div class="nav-wrapper">
+                <img src="Logo.png" id= logo>
+                <ul class="hide-on-med-and-down">
+                  <div id="terms" >
+                  <div class="nav-wrapper">
+                  <li><a href="our-story.html">Our Story </a></li>
+                  <li><a href="recipes.html">Recipes</a></li>
+                  <li><a href="pricing.html">Pricing</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <!-- Dropdown Trigger -->
+                  <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Recipes<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                </div>
+              </div>
+              </nav>
+            </nav>
+        </header>
+        
+        <main>
+            
+          <!-- Carousel-->
+            <div style= "min-height: 400px" class="carousel">
+             <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#!"><img src="https://lorempixel.com/800/400/food/1"></a>
+                <a class="carousel-item" href="#!"><img src="https://lorempixel.com/800/400/food/2"></a>
+                <a class="carousel-item" href="#!"><img src="https://lorempixel.com/800/400/food/3"></a>
+                <a class="carousel-item" href="#!"><img src="https://lorempixel.com/800/400/food/4"></a>
+              </div>
+            </div>
+            
+          <!-- Buttons -->
+            <div>
+                <button onclick= {goToPlans()} id= plans>
+                      Plans
+                </button>
+            </div>
+            <div>
+                <button onclick= {SignInWithGoogle()} id = signInButton>
+                    Google Sign In
+                </button>
+            </div>
+
+            
+          <!-- Featured Recipes -->
+            <div id= featured>
+              <h4>Featured Recipes</h4>
+              
+              <!-- Cards -->
+              <div class = container>
+              <div class = row>
+              <div class="col xs3 s3 m3 l3 xl3">
+              <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0889.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+              
+              <div class="col xs3 s3 m3 l3 xl3">
+              <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0890.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+              
+              
+              <div class="col xs3 s3 m3 l3 xl3">
+              <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0891.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+
+              
+              <div class="col xs3 s3 m3 l3 xl3">
+              <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0892.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+            <div class= container>
+              <div class= row>
+                
+                <div class="col xs4 s4 m4 l4 xl4">
+                <div class="card medium">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="IMG_0884.JPG">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                  </div>
+                </div>
+
+              <div class="col xs4 s4 m4 l4 xl4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0885.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+              
+            <div class="col xs4 s4 m4 l4 xl4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0886.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            
+            <div class= container>
+              <div class= row>
+                
+                <div class="col xs6 s6 m6 l6 xl6">
+              <div class="card large">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0887.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+                
+                <div class="col xs6 s6 m6 l6 xl6">
+              <div class="card large">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="IMG_0888.JPG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+        </main>
+        
+        <!--Footer-->
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Copyright-->
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright of Brianna Johnson 
+            </div>
+          </div>
+        </footer>
+        <script>
+             $(document).ready(function(){
+                  $('.carousel').carousel();
+             }); 
+             $('.carousel.carousel-slider').carousel({fullWidth: true});
+        </script>
+        <!--Authorization-->
+        <script>
+            function SignInWithGoogle(){
+                var googleAuthProvider = new firebase.auth.GoogleAuthProvider
+                
+                firebase.auth().signInWithPopup(googleAuthProvider)
+                .then(function(data){
+                    console.log(data)
+                })
+                .catch(function(error){
+                    console.log(error)
+                })
+            }
+        </script>
+            </div>
+        </div>
+    </body>
+</html>
