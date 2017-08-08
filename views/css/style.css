@@ -43,9 +43,12 @@ nav{
     height: 100px;
 }
 
-#page-footer{
+.page-footer{
     background-color: #8bc34a;
-    height: 100px;
+}
+
+.footer-copyright{
+    background-color: #8bc34a;
 }
 
 #ourStory{
@@ -74,4 +77,12 @@ nav{
 
 #Large-family-Recipes {
     font-size: 20px;
+}
+
+#motto{
+    font-size: 25px;
+}
+
+#card-title{
+    font-size: 30px;
 }
