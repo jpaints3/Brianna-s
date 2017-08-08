@@ -7,6 +7,9 @@
     position: absolute;
     top: 30%;
     left: 45%;
+    height: 75px;
+    width: 80px;
+    background-color: #fff3e0;
 }
 
 #signInButton{
@@ -26,9 +29,9 @@ li{
 
 #terms{
     position:absolute;
-    left: 5%;
+    left: 7%;
     top: 2%;
-
+    margin: 10px;
 }
 
 #featured{
@@ -45,3 +48,30 @@ nav{
     height: 100px;
 }
 
+#ourStory{
+    font-size: 25px;
+}
+
+#recipes{
+    font-size: 25px;
+}
+
+#pricing{
+    font-size: 25px;
+}
+
+#contactUs{
+    font-size: 25px;
+}
+
+#Vegetarian-Recipes{
+    font-size: 20px;
+}
+
+#Special-Allergy-Recipes{
+    font-size: 20px;
+}
+
+#Large-family-Recipes {
+    font-size: 20px;
+}
