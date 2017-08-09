@@ -6,7 +6,7 @@
 #plans {
     position: absolute;
     top: 350px;
-    left: 610px;
+    left: 760px;
     height: 75px;
     width: 80px;
     border-radius: 100%;
@@ -25,7 +25,7 @@
 #signInButton2{
     position: absolute;
     top: 2%;
-    left: 84%;
+    left: 86%;
     border-radius: 100%;
     background-color: #fff3e0;
     height: 75px;
@@ -97,7 +97,7 @@ nav{
     height: 300px;
     position: absolute;
     top: 120px;
-    left: 470px;
+    left: 610px;
     text-align: center;
 }
 
