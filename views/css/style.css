@@ -14,16 +14,18 @@
 }
 
 #signInButton{
-    position: relative;
+    position: absolute;
     left: 92%;
+    top: 2%;
     border-radius: 100%;
     background-color: #fff3e0;
     height: 75px;
 }
 
 #signInButton2{
-    position: relative;
+    position: absolute;
     left: 86%;
+    top: 2%;
     border-radius: 100%;
     background-color: #fff3e0;
     height: 75px;
