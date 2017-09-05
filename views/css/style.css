@@ -14,8 +14,7 @@
 }
 
 #signInButton{
-    position: absolute;
-    top: 2%;
+    position: relative;
     left: 92%;
     border-radius: 100%;
     background-color: #fff3e0;
@@ -23,8 +22,7 @@
 }
 
 #signInButton2{
-    position: absolute;
-    top: 2%;
+    position: relative;
     left: 86%;
     border-radius: 100%;
     background-color: #fff3e0;
