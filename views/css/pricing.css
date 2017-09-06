@@ -1,0 +1,64 @@
+#logo{
+    height: 100px;
+    width: 100px;
+}
+
+nav{
+    background-color: #8bc34a;
+    height: 100px;
+}
+
+#signInButton{
+    position: absolute;
+    left: 92%;
+    top: 2%;
+    border-radius: 100%;
+    background-color: #fff3e0;
+    height: 75px;
+}
+
+#signInButton2{
+    position: absolute;
+    left: 84%;
+    top: 2%;
+    border-radius: 100%;
+    background-color: #fff3e0;
+    height: 75px;
+    width: 87.4px;
+}
+
+.page-footer{
+    background-color: #8bc34a;
+}
+
+.footer-copyright{
+    background-color: #8bc34a;
+}
+
+#ourStory{
+    font-size: 25px;
+}
+
+#recipes{
+    font-size: 25px;
+}
+
+#pricing{
+    font-size: 25px;
+}
+
+#contactUs{
+    font-size: 25px;
+}
+
+#Vegetarian-Recipes{
+    font-size: 20px;
+}
+
+#Special-Allergy-Recipes{
+    font-size: 20px;
+}
+
+#Large-family-Recipes {
+    font-size: 20px;
+}
